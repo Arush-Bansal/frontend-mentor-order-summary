@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: rgb(214, 225, 255);
+}
+
+#order-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* top: ; */
+    background-color: white;
+    width: 350px;
+    /* width: 80vw; */
+    border-radius: 20px;
+}
+
+#order-card>img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main {
+    margin: 40px;
+}
+
+main>h2 {
+    text-align: center;
+    color: rgb(36, 46, 84);
+    text-shadow: 0 0 1.5px black;
+}
+
+main>p {
+    text-align: center;
+    line-height: 1.7rem;
+    text-shadow: 0 0 1px rgb(174, 178, 190);
+    color: rgb(174, 178, 190);
+}
+
+.order-type {
+    background-color: rgb(248, 249, 254);
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#plan-and-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.plan-type {
+    font-weight: bold;
+    text-shadow: 0 0 1px;
+}
+
+.price {
+    color: rgb(154, 160, 174);
+    font-size: medium;
+    text-shadow: 0 0 1px;
+}
+
+.order-type div.btn {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 1000;
+    color: rgb(87, 78, 174);
+}
+
+.order-type div.btn:hover {
+    text-decoration: none;
+    color: rgb(196, 196, 247);
+    transition-duration: 0.3s;
+
+}
+
+#payment-button {
+    border-radius: 10px;
+    background-color: rgb(56, 42, 225);
+    padding-top: 1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 29px;
+    padding-bottom: 1rem;
+    text-shadow: 0 0 2px;
+    box-shadow: -5px 10px 20px 0px rgb(56, 42, 225, 0.3);
+}
+
+#payment-button:hover {
+    background-color: rgb(118, 108, 241);
+    transition-duration: 0.3s;
+
+}
+
+#cancel-order {
+    color: rgb(133, 138, 164);
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+#cancel-order:hover {
+    color:rgb(55, 60, 95);
+    transition-duration: 0.3s;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        /* background-position: center; */
+        background-size: cover;
+        background-color: rgb(223, 232, 255);
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+
+    }
+}
